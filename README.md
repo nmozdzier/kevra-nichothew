@@ -1,4 +1,4 @@
-#CSCI 3308 Fall 2017 Project
+# CSCI 3308 Fall 2017 Project
 -- Online Food Ordering Website --
 
 (Milestone 1 Below)
@@ -6,9 +6,9 @@
 Team Name: KMNK Online Food Ordering
 
 Members: 
-Kevin Yang
-Kira Johnson
-Matthew Penington
+Kevin Yang, 
+Kira Johnson, 
+Matthew Penington, 
 Nicholas Mozdzier
 
 Description: 
