@@ -3,7 +3,7 @@
 
 (Milestone 1 Below)
 
-Team Name: KMNK
+Team Name: KMNK Online Food Ordering
 
 Members: 
 Kevin Yang
