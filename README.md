@@ -1,4 +1,4 @@
-CSCI 3308 Fall 2017 Project
+#CSCI 3308 Fall 2017 Project
 -- Online Food Ordering Website --
 
 (Milestone 1 Below)
