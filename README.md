@@ -1,27 +1,32 @@
-# kevra-nichothew
-CSCI 3308 Semester Project
+CSCI 3308 Fall 2017 Project
+-- Online Food Ordering Website --
 
-(Milestone 1 below)
+(Milestone 1 Below)
 
-Team Name: WeatherTech Cafe Online Ordering
+Team Name: KMNK
 
-Members: Kevin Yang, Kira Johnson, Matthew Penington, Nicholas Mozdzier (Kevra Nichothew)
-
+Members: 
+Kevin Yang
+Kira Johnson
+Matthew Penington
+Nicholas Mozdzier
 
 Description: 
-	Our project will ideally provide a website for CU Boulder’s own WeatherTech Cafe from which users will be able to order food online and view a menu, optimized for both computer and phone use (it does not currently have one). We have not spoken to WeatherTech regarding this website yet and don’t plan to involve them until we have a project that meets the requirements of the class in order to avoid unnecessary problems for us as this is first and foremost a project that we will receive a grade for. However, we will still design the website utilizing their menu and branding if they do decide to implement our project should we have time.
-	Online ordering is especially important for the WeatherTech Cafe because ordering a pizza or calzone can usually take upwards of 25-30 minutes to prepare and students often don’t want to or have enough time to order these items. This would also speed up the often long line that is present during peak eating hours. This should theoretically increase business for the WeatherTech Cafe as well. 
-	We will not be incorporating any sort of online payments for this project due to their complexity and potential security concerns. If time allows we will work with WeatherTech to provide a system where users can place orders and pay when they come to pick up the food. For the purposes of this project, we intend to make a generic online food ordering app that both uses the menu and branding/style for WeatherTech Cafe in accordance with what we are able to gather independently. 
+Our team will be creating a website for ordering food in advance for in-restaurant pickup. We will be using CU Boulder's WeatherTech Cafe for the menu and branding. Features will include user account creation, online ordering along with substantial order customization for their main food categories: pizza/calzones, hot sandwiches, and salads, a “backend” side for the restaurant to receive and complete orders. Upon placing an order, customers will be sent an email confirmation with an order number for pickup. As part of the ordering system, customers will have access to a cart if they wish to order multiple items. 
+We may add products that do not need much/any preparation such as soup, candy bars, and beverages that are also available at the establishment and attempt to work with them to actually implement this website at the end if time permits. We may also add online delivery due to its simplicity to add to the existing functionality. We have no plans to add online payment due to their added complexity and security concerns. 
+
 
 Vision Statement:
-	Our team could make a lasting impact on CU Boulder and its future students by providing a desired service that is not currently offered in the form of a website for WeatherTech Cafe that allows users to order food in advance.
+We will gain experience building a full fledged website that can be used in the real world; potentially, our team could make a lasting impact on CU Boulder and its future students by providing a desired service that is not currently offered in the form of a website for WeatherTech Cafe that allows users to order food in advance.
 
 Motivation:
-	Many people (including Nick’s co-workers) on campus would love a way to order food online from WeatherTech Cafe that is otherwise inaccessible to them due to the long wait times for some of the restaurant’s most popular items: pizzas and calzones. 
+Many people (including Nick’s co-workers) on campus would love a way to order food online from WeatherTech Cafe that is otherwise inaccessible to them due to the long (25-30 minute) wait times for some of the restaurant’s most popular items: pizzas and calzones. Of course we need to make the website for class first, so we will not be working with WeatherTech until we have met the class project requirements.
 
-Risks: This project idea was selected in part because it minimizes risks involved in a group programming project, which is especially important because our team only has 4 members who all have fairly limited experience with programming. We think designing most of the project will be pretty straightforward. The biggest challenge will be working with WeatherTech Cafe to get it actually implemented (if time allows) since we will be dealing with additional interests beyond the project requirements.
+Risks: 
+This project idea was selected in part because it minimizes risks involved in a group programming project, which is especially important because our team only has 4 members who all have fairly limited experience with programming. We think designing most of the project will be pretty straightforward. The biggest challenge will be working with WeatherTech Cafe to get it actually implemented (if time allows) since we will be dealing with additional interests beyond the project requirements. 
 
-Risk Mitigation Plan:  We have put a lot of thought and several hours of group discussion into deciding on an idea that was manageable in size and that everyone agreed upon while still meeting the project requirements. During the initial discussion, we decided against making a phone app or game to not add any additional difficulty to an already relatively inexperienced team. We are completely avoiding online payments even if we actually end up working with WeatherTech. We are saving working with WeatherTech until we have something that meets the requirements of the class. It is very possible that we may not be able to work with them at all either due to their unwillingness to use our website or us not having the time. Working towards an actual implementation of our website with WeatherTech is a stretch goal and will not in any way interfere with our ability to create a complete product that meets the requirements of the class. 
+Risk Mitigation Plan:  
+We have put a lot of thought and several hours of group discussion into deciding on an idea that was manageable in size and that everyone agreed upon while still meeting the project requirements. During the initial discussion, we decided against making a phone app or game to not add any additional difficulty to an already relatively inexperienced team. We are completely avoiding online payments even if we actually end up working with WeatherTech. We are saving working with them until we have something that meets the requirements of the class. It is very possible that we may not be able to work with them at all either due to their unwillingness to use our website or us not having the time. Working towards an actual implementation of our website with WeatherTech is a stretch goal and will not in any way interfere with our ability to create a complete product that meets the requirements of the class. 
 
 Version Control: GitHub (and Google Drive for the writing and presenting stuff)
 
