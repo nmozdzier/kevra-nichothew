@@ -1,0 +1,52 @@
+--- Milestone 2 ---
+
+Project Management Tool
+-Trello
+
+Plan Cycle within the
+Project Management
+Method
+
+Agile Methodology
+
+
+Features (Product Backlog):
+    User Requirements
+		Online Menu
+		Cart for current session
+		Email confirmation + number
+		About (info) page with menu and location
+		User account + login page
+		Saved past orders
+		Notifying the restaurant
+ 
+	STRETCH
+	- Update current status of food/timer for wait
+	- Delivery
+	- Forum for reviews?
+	- Delayed order
+
+    Non-Behavioral (how) Requirements
+		Online menu through webpage
+		Cart through database
+		Email confirmation (Twilo? JS/PHP)
+		About page (html/css/google maps)
+		User account (Ruby on Rails)
+		Past orders from (database)
+		Notify restaurant (email? text?)
+
+Sprints:
+	3 weeks for database + framework (learn Ruby on Rails + mySQL), cart + past orders
+		Database - Matt - Oct. 31
+		Framework - Kira - Oct. 31
+		Cart - Kevin - Oct. 31
+		Past Orders - Nicholas - Oct. 31
+	3 weeks Website (menu, about page, login page) + Account setup
+		Menu - Nicholas - Nov. 17
+		About Page - Matt - Nov. 4
+		Login Page - Kira - Nov. 27
+		Account Setup - Kevin - Nov. 27
+	3 weeks for Ordering Functionality + email confirmation + notify restaurant
+		Ordering Functionality - Kevin and Kira - Dec. 3
+		Email confirmation - Nicholas - Dec. 5
+		Restaurant notification - Matt - Dec. 5
