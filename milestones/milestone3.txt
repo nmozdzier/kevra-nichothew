@@ -1,0 +1,9 @@
+--- Milestone 3 ---
+
+Our selected database is MariaDB (same syntax as mySQL), using the XAMPP stack (Apache + MariaDB + PHP)
+
+The tables are organized with the objective of being able to categorize user/employee information, as well as
+having past orders, and of course all of the available food items.
+
+There is an ER Diagram named "milestone3_ERdiagram.png" in this milestones folder, outlining what tables/columns we have.
+Scripts to set up the database + tables and to populate them can be found under the "scripts" folder.
