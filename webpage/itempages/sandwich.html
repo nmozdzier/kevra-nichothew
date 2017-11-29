@@ -19,9 +19,65 @@
 	<script>
 		function changePrice()
 		{
-			if (document.getElementById("choice").value == "gelato_8oz")
+			if (document.getElementById("choice").value == "baker_bacon")
 			{
-				document.getElementById("price").innerHTML = "$2.89";
+				document.getElementById("price").innerHTML = "$6.89";
+			}
+			else if (document.getElementById("choice").value == "bbq_chicken")
+			{
+				document.getElementById("price").innerHTML = "$6.89";
+			}
+			else if (document.getElementById("choice").value == "classic_blt")
+			{
+				document.getElementById("price").innerHTML = "$4.89";
+			}
+			else if (document.getElementById("choice").value == "classic_italian")
+			{
+				document.getElementById("price").innerHTML = "$6.89";
+			}
+			else if (document.getElementById("choice").value == "darly_divine")
+			{
+				document.getElementById("price").innerHTML = "$6.89";
+			}
+			else if (document.getElementById("choice").value == "farrand_fodder")
+			{
+				document.getElementById("price").innerHTML = "$6.89";
+			}
+			else if (document.getElementById("choice").value == "hallett_ham")
+			{
+				document.getElementById("price").innerHTML = "$6.89";
+			}
+			else if (document.getElementById("choice").value == "libby_licious")
+			{
+				document.getElementById("price").innerHTML = "$6.89";
+			}
+			else if (document.getElementById("choice").value == "parisian_grilled_cheese")
+			{
+				document.getElementById("price").innerHTML = "$5.89";
+			}
+			else if (document.getElementById("choice").value == "roast_beef_pepper_melt")
+			{
+				document.getElementById("price").innerHTML = "$7.89";
+			}
+			else if (document.getElementById("choice").value == "tofu_mozzarella")
+			{
+				document.getElementById("price").innerHTML = "$5.89";
+			}
+			else if (document.getElementById("choice").value == "tuna_melt")
+			{
+				document.getElementById("price").innerHTML = "$5.89";
+			}
+			else if (document.getElementById("choice").value == "turkey_bacon_club")
+			{
+				document.getElementById("price").innerHTML = "$6.89";
+			}
+			else if (document.getElementById("choice").value == "turkey_jalapeno_melt")
+			{
+				document.getElementById("price").innerHTML = "$6.89";
+			}
+			else if (document.getElementById("choice").value == "veggie_club")
+			{
+				document.getElementById("price").innerHTML = "$6.89";
 			}
 		}
 	</script>
@@ -86,9 +142,48 @@
 					Type:<br>
 					<select id="choice" name="type" onchange="changePrice()">
 						<option value="baker_bacon">Baker Bacon</option>
-						<!-- @@ CONTINUE THE LIST HERE @@ -->
+						<option value="bbq_chicken">BBQ Chicken</option>
+						<option value="classic_blt">Classic BLT</option>
+						<option value="classic_italian">Classic Italian</option>
+						<option value="darly_divine">Darly Divine</option>
+						<option value="farrand_fodder">Farrand Fodder</option>
+						<option value="hallett_ham">Hallett Ham</option>
+						<option value="libby_licious">Libby Licious</option>
+						<option value="parisian_grilled_cheese">Parisian Grilled Cheese</option>
+						<option value="roast_beef_pepper_melt">Roast Beef Pepper Melt</option>
+						<option value="tofu_mozzarella">Tofu Mozzarella</option>
+						<option value="tuna_melt">Tuna Melt</option>
+						<option value="turkey_bacon_club">Turkey Bacon Club</option>
+						<option value="turkey_jalapeno_melt">Turkey Jalapeno Melt</option>
+						<option value="veggie_club">Veggie Club</option>
 					</select> 
 					<br><br>
+					Bread:<br>
+					<input value="white_baguette" id="White Baguette" name="bread_choice" type="radio"> White Baguette <br>
+					<input value="wheat_baguette" id="Wheat Baguette" name="bread_choice" type="radio"> Wheat Baguette <br>
+					<input value="white_ciabatta" id="White Ciabatta" name="bread_choice" type="radio"> White Ciabatta <br>
+					<input value="potato_rosemary_ciabatta" id="Potato Rosemary Ciabatta" name="bread_choice" type="radio"> Potato Rosemary Ciabatta <br>
+					<input value="focaccia" id="Focaccia" name="bread_choice" type="radio"> Focaccia <br>
+					<input value="7_grain" id="7-Grain" name="bread_choice" type="radio"> 7-Grain <br>
+					<br>
+					Condiment:<br>
+					<input value="ranch" id="Ranch" name="condiment" type="radio"> Ranch <br>
+					<input value="spicy_ranch" id="Spicy Ranch" name="condiment" type="radio"> Spicy Ranch <br>
+					<input value="mustard" id="Mustard" name="condiment" type="radio"> Mustard <br>
+					<input value="brown_mustard" id="Brown Mustard" name="condiment" type="radio"> Brown Mustard <br>
+					<input value="mayo" id="Mayo" name="condiment" type="radio"> Mayo <br>
+					<input value="bbq" id="BBQ" name="condiment" type="radio"> BBQ <br>
+					<input value="hot_sauce" id="Hot Sauce" name="condiment" type="radio"> Hot Sauce <br>
+					<input value="pesto" id="Pesto" name="condiment" type="radio"> Pesto <br>
+					<input value="hummus" id="Hummus" name="condiment" type="radio"> Hummus <br>
+					<input value="honey_mustard" id="Honey Mustard" name="condiment" type="radio"> Honey Mustard <br>
+					<input value="italian" id="Italian" name="condiment" type="radio"> Italian <br>
+					<input value="avocado" id="Avocado" name="condiment" type="radio"> Avocado <br>
+					<br>
+					Toasted:<br>
+					<input value="true" name="toasted" id="Yes" type="radio"> Yes <br>
+					<input value="false" name="toasted" id="No" type="radio"> No <br>
+					<br>
 					Quantity:<br>
 					<select name="quantity">
 						<option value="1">1</option>
