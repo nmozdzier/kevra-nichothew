@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WeatherTech Cafe - Salad</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+	<link href="css/shop-item.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">WeatherTech Cafe</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-3">
+          <h1 class="my-4">Salad</h1>
+          <div class="list-group">
+            <a href="#" class="list-group-item active">Category 1</a>
+            <a href="#" class="list-group-item">Category 2</a>
+            <a href="#" class="list-group-item">Category 3</a>
+          </div>
+        </div>
+        <!-- /.col-lg-3 -->
+
+        <div class="col-lg-9">
+
+          <div class="card mt-4">
+            <img class="card-img-top img-fluid" src="images/salad.jpg" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Price</h3>
+              <h4 id="price">$2.89</h4>
+			  <p class="card-text">"Simple and fresh."</p>
+			  <p class="card-text">Ingredients: Greens, Veggies, Cheese, Toppings, Protein, Dressing</p>
+				<form action="submit.php">
+					Greens:<br>
+					<input value="field_greens" name="green" id="Field Greens" type="checkbox"> Field Greens <br>
+					<input value="romaine" name="green" id="Romaine" type="checkbox"> Romaine <br>
+					<input value="spinach" name="green" id="Spinach" type="checkbox"> Spinach <br>
+					<br>
+					Veggies (choose 3, $.75 per extra):<br>
+					<input value="tomato" name="veggie" id="Tomato" type="checkbox"> Tomato <br>
+					<input value="onion" name="veggie" id="Onion" type="checkbox"> Onion <br>
+					<input value="olives" name="veggie" id="Olives" type="checkbox"> Olives <br>
+					<input value="mushrooms" name="veggie" id="Mushrooms" type="checkbox"> Mushrooms <br>
+					<input value="bell_peppers" name="veggie" id="Bell Peppers" type="checkbox"> Bell Peppers <br>
+					<input value="banana_peppers" name="veggie" id="Banana Peppers" type="checkbox"> Banana Peppers <br>
+					<input value="broccoli" name="veggie" id="Broccoli" type="checkbox"> Broccoli <br>
+					<input value="cucumber" name="veggie" id="Cucumber" type="checkbox"> Cucumber <br>
+					<input value="jalapeno" name="veggie" id="Jalapeno" type="checkbox"> Jalapeno <br>
+					<input value="corn" name="veggie" id="Corn" type="checkbox"> Corn <br>
+					<input value="garbanzo_beans" name="veggie" id="Garbanzo Beans" type="checkbox"> Garbanzo Beans <br>
+					<input value="carrots" name="veggie" id="Carrots" type="checkbox"> Carrots <br>
+					<br>
+					Cheese (2oz, $.99 each):<br>
+					<input value="cheddar" name="cheese" id="Cheddar" type="checkbox"> Cheddar <br>
+					<input value="feta" name="cheese" id="Feta" type="checkbox"> Feta <br>
+					<input value="parmesan" name="cheese" id="Parmesan" type="checkbox"> Parmesan <br>
+					<input value="blue" name="cheese" id="Blue" type="checkbox"> Blue <br>
+					<input value="mozzarella" name="cheese" id="Mozzarella" type="checkbox"> Mozzarella <br>
+					<br>
+					Protein (6oz, $2.89 each):<br>
+					<input value="turkey" name="protein" id="Turkey" type="checkbox"> Turkey <br>
+					<input value="chicken" name="protein" id="Chicken" type="checkbox"> Chicken <br>
+					<input value="tofu" name="protein" id="Tofu" type="checkbox"> Tofu <br>
+					<input value="bacon" name="protein" id="Bacon" type="checkbox"> Bacon <br>
+					<input value="tuna" name="protein" id="Tuna" type="checkbox"> Tuna <br>
+					<input value="salami" name="protein" id="Salami" type="checkbox"> Salami <br>
+					<input value="pepperoni" name="protein" id="Pepperoni" type="checkbox"> Pepperoni <br>
+					<input value="roast_beef" name="protein" id="Roast Beef" type="checkbox"> Roast Beef <br>
+					<input value="ham" name="protein" id="Ham" type="checkbox"> Ham <br>
+					<br>
+					Toppings:<br>
+					<input value="croutons" name="topping" id="Croutons" type="checkbox"> Croutons <br>
+					<input value="cranberry_raisins" name="topping" id="Cranberry Raisins" type="checkbox"> Cranberry Raisins <br>
+					<input value="sesame_seeds" name="topping" id="Sesame Seeds" type="checkbox"> Sesame Seeds <br>
+					<br>
+					Dressing (choose 1):<br>
+					<input value="ranch" id="Ranch" name="dressing" type="radio"> Ranch <br>
+					<input value="spicy_ranch" id="Spicy Ranch" name="dressing" type="radio"> Spicy Ranch <br>
+					<input value="parmesan_peppercorn" id="Parmesan Peppercorn" name="dressing" type="radio"> Parmesan Peppercorn <br>
+					<input value="red_wine_vinaigrette" id="Red Wine Vinaigrette" name="dressing" type="radio"> Red Wine Vinaigrette <br>
+					<input value="raspberry_vinaigrette" id="Raspberry Vinaigrette" name="dressing" type="radio"> Raspberry Vinaigrette <br>
+					<input value="balsamic_vinaigrette" id="Balsamic Vinaigrette" name="dressing" type="radio"> Balsamic Vinaigrette <br>
+					<input value="caesar" id="Caesar" name="dressing" type="radio"> Caesar <br>
+					<input value="italian" id="Italian" name="dressing" type="radio"> Italian <br>
+					<input value="blue_cheese" id="Blue Cheese" name="dressing" type="radio"> Blue Cheese <br>
+					<input value="honey_mustard" id="Honey Mustard" name="dressing" type="radio"> Honey Mustard <br>
+					<input value="balsamic_vinegar_and_oil" id="Balsamic Vinegar and Oil" name="dressing" type="radio"> Balsamic Vinegar and Oil <br>
+					<br>
+					Quantity:<br>
+					<select name="quantity">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select> 
+					<br><br>
+					Additional Comments:<br>
+					<input type="text" value="" placeholder="Any special instructions?">
+					<br><br>
+					<input type="submit" value="Submit">
+				</form> 
+            </div>
+          </div>
+          <!-- /.card -->
+
+          <!-- /.card -->
+
+        </div>
+        <!-- /.col-lg-9 -->
+
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; kevra-nichothew 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

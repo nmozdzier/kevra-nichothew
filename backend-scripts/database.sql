@@ -166,4 +166,3 @@ INSERT INTO ingredients VALUES (58, "dressing", "italian", "salad");
 INSERT INTO ingredients VALUES (59, "dressing", "blue_cheese", "salad");
 INSERT INTO ingredients VALUES (60, "dressing", "honey_mustard", "salad");
 INSERT INTO ingredients VALUES (61, "dressing", "balsamic_vinegar_and_oil", "salad");
-
