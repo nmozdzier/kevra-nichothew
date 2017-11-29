@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+		function changePrice()
+		{
+			if (document.getElementById("choice").value == "beef_bean_chili_8oz")
+			{
+				document.getElementById("price").innerHTML = "$2.89";
+			}
+			else if (document.getElementById("choice").value == "beef_bean_chili_12oz")
+			{
+				document.getElementById("price").innerHTML = "$3.89";
+			}
+			else if (document.getElementById("choice").value == "soup_of_day_8oz")
+			{
+				document.getElementById("price").innerHTML = "$2.89";
+			}
+			else if (document.getElementById("choice").value == "soup_of_day_12oz")
+			{
+				document.getElementById("price").innerHTML = "$3.89";
+			}
+		}
+	</script>
+
+  </head>
+  <body>
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-3">
+          <h1 class="my-4">Soup</h1>
+          <div class="list-group">
+            <a href="#" class="list-group-item active">Category 1</a>
+            <a href="#" class="list-group-item">Category 2</a>
+            <a href="#" class="list-group-item">Category 3</a>
+          </div>
+        </div>
+        <!-- /.col-lg-3 -->
+
+        <div class="col-lg-9">
+
+          <div class="card mt-4">
+            <%= image_tag "soup.jpg"%>
+            <div class="card-body">
+              <h3 class="card-title">Price</h3>
+              <h4 id="price">$2.89</h4>
+			  <p class="card-text">"Warm and savory."</p>
+			  <p class="card-text">Ingredients: Beans, Beef, Tomatoes, Potatoes, Chili</p>
+				<form action="submit.php">
+					Type:<br>
+					<select id="choice" name="type" onchange="changePrice()">
+						<option value="beef_bean_chili_8oz">Beef and Bean Chili - 8 oz</option>
+						<option value="beef_bean_chili_12oz">Beef and Bean Chili - 12 oz</option>
+						<option value="soup_of_day_8oz">Soup of the Day - 8 oz</option>
+						<option value="soup_of_day_12oz">Soup of the Day - 12 oz</option>
+					</select> 
+					<br><br>
+					Quantity:<br>
+					<select name="quantity">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select> 
+					<br><br>
+					Additional Comments:<br>
+					<input type="text" value="" placeholder="Any special instructions?">
+					<br><br>
+					<input type="submit" value="Submit">
+				</form> 
+            </div>
+          </div>
+          <!-- /.card -->
+
+          <!-- /.card -->
+
+        </div>
+        <!-- /.col-lg-9 -->
+
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+  </body>
+</html>

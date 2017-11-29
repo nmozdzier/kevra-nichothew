@@ -3,6 +3,18 @@ Rails.application.routes.draw do
 
   get 'item_pages/pizza'
 
+  get 'item_pages/salad'
+
+  get 'item_pages/soup'
+
+  get 'item_pages/drinks'
+
+  get 'item_pages/glutenfree'
+
+  get 'item_pages/dessert'
+
+  get 'item_pages/sandwich'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

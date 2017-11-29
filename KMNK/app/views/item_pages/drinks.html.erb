@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+		function changePrice()
+		{
+			if (document.getElementById("choice").value == "coffee_12oz")
+			{
+				document.getElementById("price").innerHTML = "$1.45";
+			}
+			else if (document.getElementById("choice").value == "coffee_16oz")
+			{
+				document.getElementById("price").innerHTML = "$1.80";
+			}
+			else if (document.getElementById("choice").value == "coffee_20oz")
+			{
+				document.getElementById("price").innerHTML = "$2.05";
+			}
+			else if (document.getElementById("choice").value == "tea_12oz")
+			{
+				document.getElementById("price").innerHTML = "$1.19";
+			}
+			else if (document.getElementById("choice").value == "tea_16oz")
+			{
+				document.getElementById("price").innerHTML = "$1.59";
+			}
+			else if (document.getElementById("choice").value == "tea_20oz")
+			{
+				document.getElementById("price").innerHTML = "$1.89";
+			}
+			else if (document.getElementById("choice").value == "apple_12oz")
+			{
+				document.getElementById("price").innerHTML = "$1.95";
+			}
+			else if (document.getElementById("choice").value == "apple_16oz")
+			{
+				document.getElementById("price").innerHTML = "$2.35";
+			}
+			else if (document.getElementById("choice").value == "apple_20oz")
+			{
+				document.getElementById("price").innerHTML = "$2.65";
+			}
+			else if (document.getElementById("choice").value == "smoothie_16oz")
+			{
+				document.getElementById("price").innerHTML = "$5.89";
+			}
+		}
+	</script>
+  </head>
+  <body>
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-3">
+          <h1 class="my-4">Drink</h1>
+          <div class="list-group">
+            <a href="#" class="list-group-item active">Category 1</a>
+            <a href="#" class="list-group-item">Category 2</a>
+            <a href="#" class="list-group-item">Category 3</a>
+          </div>
+        </div>
+        <!-- /.col-lg-3 -->
+
+        <div class="col-lg-9">
+
+          <div class="card mt-4">
+            <%= image_tag "drink.jpg" %>
+            <div class="card-body">
+              <h3 class="card-title">Price</h3>
+              <h4 id="price">$1.45</h4>
+			  <p class="card-text">"Hot and delicious."</p>
+			  <p class="card-text">Ingredients: Water, Coffee Beans, Tea Leaves, Apples, Fruits</p>
+				<form action="submit.php">
+					Type:<br>
+					<select id="choice" name="type" onchange="changePrice()">
+						<option value="coffee_12oz">Coffee 12oz</option>
+						<option value="coffee_16oz">Coffee 16oz</option>
+						<option value="coffee_20oz">Coffee 20oz</option>
+						<option value="tea_12oz">Tea 12oz</option>
+						<option value="tea_16oz">Tea 16oz</option>
+						<option value="tea_20oz">Tea 20oz</option>
+						<option value="apple_12oz">Apple Cider 12oz</option>
+						<option value="apple_16oz">Apple Cider 16oz</option>
+						<option value="apple_20oz">Apple Cider 20oz</option>
+						<option value="smoothie_16oz">Smoothie 16oz</option>
+					</select> 
+					<br><br>
+					Quantity:<br>
+					<select name="quantity">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select> 
+					<br><br>
+					Additional Comments:<br>
+					<input type="text" value="" placeholder="Any special instructions?">
+					<br><br>
+					<input type="submit" value="Submit">
+				</form> 
+            </div>
+          </div>
+          <!-- /.card -->
+
+          <!-- /.card -->
+
+        </div>
+        <!-- /.col-lg-9 -->
+
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+  </body>
+</html>
