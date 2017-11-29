@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <script>
+		function changePrice()
+		{
+			if (document.getElementById("choice").value == "Cheese")
+			{
+				document.getElementById("price").innerHTML = "$4.89";
+			}
+			else if (document.getElementById("choice").value == "BBQ Chicken")
+			{
+				document.getElementById("price").innerHTML = "$6.89";
+			}
+			else if (document.getElementById("choice").value == "Pepperoni")
+			{
+				document.getElementById("price").innerHTML = "$5.49";
+			}
+			else if (document.getElementById("choice").value == "Meat Lovers")
+			{
+				document.getElementById("price").innerHTML = "$6.89";
+			}
+			else if (document.getElementById("choice").value == "Hawaiian")
+			{
+				document.getElementById("price").innerHTML = "$6.89";
+			}
+			else if (document.getElementById("choice").value == "Margherita")
+			{
+				document.getElementById("price").innerHTML = "$5.49";
+			}
+			else if (document.getElementById("choice").value == "Margheritin")
+			{
+				document.getElementById("price").innerHTML = "$5.49";
+			}
+			else if (document.getElementById("choice").value == "Vegan")
+			{
+				document.getElementById("price").innerHTML = "$5.39";
+			}
+		}
+	</script>
+  </head>
+  <body>
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-3">
+          <h1 class="my-4">Pizza</h1>
+          <div class="list-group">
+            <a href="#" class="list-group-item active">Category 1</a>
+            <a href="#" class="list-group-item">Category 2</a>
+            <a href="#" class="list-group-item">Category 3</a>
+          </div>
+        </div>
+        <!-- /.col-lg-3 -->
+
+        <div class="col-lg-9">
+
+          <div class="card mt-4">
+            <%= image_tag "pizza.jpg" %>
+            <div class="card-body">
+			  <p class="card-text">"Freshly baked, sliced, and served."</p>
+			  <p class="card-text">Ingredients: Wheat, Cheese, Tomatoes</p>
+              <h4 id="price">$4.89</h4>
+				<form action="submit.php">
+					Type:<br>
+					<select id="choice" name="type" onchange="changePrice()">
+						<option value="Cheese">Cheese</option>
+						<option value="BBQ Chicken">BBQ Chicken</option>
+						<option value="Pepperoni">Pepperoni</option>
+						<option value="Meat Lovers">Meat Lovers</option>
+						<option value="Hawaiian">Hawaiian</option>
+						<option value="Margherita">Margherita</option>
+						<option value="Margheritin">Margheritin</option>
+						<option value="Vegan">Vegan</option>
+					</select> 
+					<br><br>
+					Quantity:<br>
+					<select name="quantity">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select> 
+					<br><br>
+					Additional Comments:<br>
+					<input type="text" value="" placeholder="Any special instructions?">
+					<br><br>
+					<input type="submit" value="Add to Cart">
+				</form> 
+            </div>
+          </div>
+          <!-- /.card -->
+
+          <!-- /.card -->
+
+        </div>
+        <!-- /.col-lg-9 -->
+
+      </div>
+
+    </div>
+    <!-- /.container -->
+  </body>
+</html>
