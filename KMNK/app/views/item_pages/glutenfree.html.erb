@@ -1,7 +1,68 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <title>WeatherTech Cafe - Gluten-Free</title>
   </head>
   <body>
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-3">
+          <h1 class="my-4">Gluten-Free</h1>
+          <div class="list-group">
+            <a href="#" class="list-group-item active">Category 1</a>
+            <a href="#" class="list-group-item">Category 2</a>
+            <a href="#" class="list-group-item">Category 3</a>
+          </div>
+        </div>
+        <!-- /.col-lg-3 -->
+
+        <div class="col-lg-9">
+
+          <div class="card mt-4">
+            <%= image_tag "glutenfree.jpg" %>
+            <div class="card-body">
+              <h3 class="card-title">Price</h3>
+              <h4 id="price">$6.89</h4>
+			  <p class="card-text">"Gluten-Free and Tasty."</p>
+			  <p class="card-text">Ingredients: </p>
+				<form action="submit.php">
+					Type:<br>
+					<select id="choice" name="type">
+						<option value="hallett_ham_sandwich">Hallett Ham Sandwich</option>
+						<option value="veggie_club_sandwich">Veggie Club Sandwich</option>
+						<option value="roast_turkey_wrap">Roast Turkey Wrap</option>
+						<option value="heavenly_hummus_wrap">Heavenly Hummus Wrap</option>
+					</select> 
+					<br><br>
+					Quantity:<br>
+					<select name="quantity">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select> 
+					<br><br>
+					Additional Comments:<br>
+					<input type="text" value="" placeholder="Any special instructions?">
+					<br><br>
+					<input type="submit" value="Submit">
+				</form> 
+            </div>
+          </div>
+          <!-- /.card -->
+
+          <!-- /.card -->
+
+        </div>
+        <!-- /.col-lg-9 -->
+
+      </div>
+
+    </div>
+    <!-- /.container -->
   </body>
 </html>
