@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WeatherTech Cafe - Dessert</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+	<link href="css/shop-item.css" rel="stylesheet">
+
+	<script>
+		function changePrice()
+		{
+			if (document.getElementById("choice").value == "gelato_8oz")
+			{
+				document.getElementById("price").innerHTML = "$2.89";
+			}
+			else if (document.getElementById("choice").value == "gelato_12oz")
+			{
+				document.getElementById("price").innerHTML = "$3.69";
+			}
+			else if (document.getElementById("choice").value == "sundae_8oz")
+			{
+				document.getElementById("price").innerHTML = "$2.89";
+			}
+			else if (document.getElementById("choice").value == "sundae_12oz")
+			{
+				document.getElementById("price").innerHTML = "$3.69";
+			}
+			else if (document.getElementById("choice").value == "milkshake")
+			{
+				document.getElementById("price").innerHTML = "$5.89";
+			}
+			else if (document.getElementById("choice").value == "avalanche")
+			{
+				document.getElementById("price").innerHTML = "$5.89";
+			}
+			else if (document.getElementById("choice").value == "hot_chocolate_12oz")
+			{
+				document.getElementById("price").innerHTML = "$2.85";
+			}
+			else if (document.getElementById("choice").value == "hot_chocolate_16oz")
+			{
+				document.getElementById("price").innerHTML = "$3.55";
+			}
+			else if (document.getElementById("choice").value == "hot_chocolate_20oz")
+			{
+				document.getElementById("price").innerHTML = "$3.85";
+			}
+		}
+	</script>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">WeatherTech Cafe</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-3">
+          <h1 class="my-4">Dessert</h1>
+          <div class="list-group">
+            <a href="#" class="list-group-item active">Category 1</a>
+            <a href="#" class="list-group-item">Category 2</a>
+            <a href="#" class="list-group-item">Category 3</a>
+          </div>
+        </div>
+        <!-- /.col-lg-3 -->
+
+        <div class="col-lg-9">
+
+          <div class="card mt-4">
+            <img class="card-img-top img-fluid" src="images/dessert.jpg" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Price</h3>
+              <h4 id="price">$2.89</h4>
+			  <p class="card-text">"Mouthwateringly sweet."</p>
+			  <p class="card-text">Ingredients: Chocolate, Vanilla, Milk, Cream, Syrup</p>
+				<form action="submit.php">
+					Type:<br>
+					<select id="choice" name="type" onchange="changePrice()">
+						<option value="gelato_8oz">Gelato 8oz</option>
+						<option value="gelato_12oz">Gelato 12oz</option>
+						<option value="sundae_8oz">Sundae 8oz</option>
+						<option value="sundae_12oz">Sundae 12oz</option>
+						<option value="milkshake">Milkshake</option>
+						<option value="avalanche">Avalanche</option>
+						<option value="hot_chocolate_12oz">Hot Chocolate 12oz</option>
+						<option value="hot_chocolate_16oz">Hot Chocolate 16oz</option>
+						<option value="hot_chocolate_20oz">Hot Chocolate 20oz</option>
+					</select> 
+					<br><br>
+					Quantity:<br>
+					<select name="quantity">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select> 
+					<br><br>
+					Additional Comments:<br>
+					<input type="text" value="" placeholder="Any special instructions?">
+					<br><br>
+					<input type="submit" value="Submit">
+				</form> 
+            </div>
+          </div>
+          <!-- /.card -->
+
+          <!-- /.card -->
+
+        </div>
+        <!-- /.col-lg-9 -->
+
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; kevra-nichothew 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
