@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
   <head>
@@ -14,7 +14,45 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/shop-item.css" rel="stylesheet">
+	<link href="css/shop-item.css" rel="stylesheet">
+
+	<script>
+		function changePrice()
+		{
+			if (document.getElementById("choice").value == "Cheese")
+			{
+				document.getElementById("price").innerHTML = "$5.89";
+			}
+			else if (document.getElementById("choice").value == "BBQ Chicken")
+			{
+				document.getElementById("price").innerHTML = "$7.89";
+			}
+			else if (document.getElementById("choice").value == "Pepperoni")
+			{
+				document.getElementById("price").innerHTML = "$6.49";
+			}
+			else if (document.getElementById("choice").value == "Meat Lovers")
+			{
+				document.getElementById("price").innerHTML = "$7.89";
+			}
+			else if (document.getElementById("choice").value == "Hawaiian")
+			{
+				document.getElementById("price").innerHTML = "$7.89";
+			}
+			else if (document.getElementById("choice").value == "Margherita")
+			{
+				document.getElementById("price").innerHTML = "$6.49";
+			}
+			else if (document.getElementById("choice").value == "Margheritin")
+			{
+				document.getElementById("price").innerHTML = "$6.49";
+			}
+			else if (document.getElementById("choice").value == "Vegan")
+			{
+				document.getElementById("price").innerHTML = "$6.39";
+			}
+		}
+	</script>
 
   </head>
 
@@ -69,13 +107,13 @@
             <img class="card-img-top img-fluid" src="images/calzone.jpg" alt="">
             <div class="card-body">
               <h3 class="card-title">Price</h3>
-              <h4>$5.89</h4>
+              <h4 id="price">$5.89</h4>
 			  <p class="card-text">"Melted to perfection."</p>
-			  <p class="card-text">Ingredients: Wheat, Cheese, Tomatoes, Choice (BBQ Chicken, Pepperoni, 
-				Meat Lovers, Hawaiian, Margherita, Margheritin, Vegan). </p>
+			  <p class="card-text">Ingredients: Wheat, Cheese, Tomatoes</p>
 				<form action="submit.php">
 					Type:<br>
-					<select name="type">
+					<select id="choice" name="type" onchange="changePrice()">
+						<option value="Cheese">Cheese</option>
 						<option value="BBQ Chicken">BBQ Chicken</option>
 						<option value="Pepperoni">Pepperoni</option>
 						<option value="Meat Lovers">Meat Lovers</option>

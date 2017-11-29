@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
   <head>
@@ -16,6 +16,43 @@
     <!-- Custom styles for this template -->
     <link href="css/shop-item.css" rel="stylesheet">
 
+	<script>
+		function changePrice()
+		{
+			if (document.getElementById("choice").value == "Cheese")
+			{
+				document.getElementById("price").innerHTML = "$4.89";
+			}
+			else if (document.getElementById("choice").value == "BBQ Chicken")
+			{
+				document.getElementById("price").innerHTML = "$6.89";
+			}
+			else if (document.getElementById("choice").value == "Pepperoni")
+			{
+				document.getElementById("price").innerHTML = "$5.49";
+			}
+			else if (document.getElementById("choice").value == "Meat Lovers")
+			{
+				document.getElementById("price").innerHTML = "$6.89";
+			}
+			else if (document.getElementById("choice").value == "Hawaiian")
+			{
+				document.getElementById("price").innerHTML = "$6.89";
+			}
+			else if (document.getElementById("choice").value == "Margherita")
+			{
+				document.getElementById("price").innerHTML = "$5.49";
+			}
+			else if (document.getElementById("choice").value == "Margheritin")
+			{
+				document.getElementById("price").innerHTML = "$5.49";
+			}
+			else if (document.getElementById("choice").value == "Vegan")
+			{
+				document.getElementById("price").innerHTML = "$5.39";
+			}
+		}
+	</script>
   </head>
 
   <body>
@@ -68,14 +105,13 @@
           <div class="card mt-4">
             <img class="card-img-top img-fluid" src="images/pizza.jpg" alt="">
             <div class="card-body">
-              <h3 class="card-title">Price</h3>
-              <h4>$5.89</h4>
 			  <p class="card-text">"Freshly baked, sliced, and served."</p>
-			  <p class="card-text">Ingredients: Wheat, Cheese, Tomatoes, Choice (BBQ Chicken, Pepperoni, 
-				Meat Lovers, Hawaiian, Margherita, Margheritin, Vegan). </p>
+			  <p class="card-text">Ingredients: Wheat, Cheese, Tomatoes</p>
+              <h4 id="price">$4.89</h4>
 				<form action="submit.php">
 					Type:<br>
-					<select name="type">
+					<select id="choice" name="type" onchange="changePrice()">
+						<option value="Cheese">Cheese</option>
 						<option value="BBQ Chicken">BBQ Chicken</option>
 						<option value="Pepperoni">Pepperoni</option>
 						<option value="Meat Lovers">Meat Lovers</option>
@@ -97,7 +133,7 @@
 					Additional Comments:<br>
 					<input type="text" value="" placeholder="Any special instructions?">
 					<br><br>
-					<input type="submit" value="Submit">
+					<input type="submit" value="Add to Cart">
 				</form> 
             </div>
           </div>
