@@ -10,41 +10,42 @@
 
     <title>WeatherTech Cafe - Calzone</title>
     <script>
-		function changePrice()
-		{
-			if (document.getElementById("choice").value == "Cheese")
+			function changePrice()
 			{
-				document.getElementById("price").innerHTML = "$5.89";
+				if (document.getElementById("choice").value == "Cheese")
+				{
+					document.getElementById("price").innerHTML = "$5.89";
+				}
+				else if (document.getElementById("choice").value == "BBQ Chicken")
+				{
+					document.getElementById("price").innerHTML = "$7.89";
+				}
+				else if (document.getElementById("choice").value == "Pepperoni")
+				{
+					document.getElementById("price").innerHTML = "$6.49";
+				}
+				else if (document.getElementById("choice").value == "Meat Lovers")
+				{
+					document.getElementById("price").innerHTML = "$7.89";
+				}
+				else if (document.getElementById("choice").value == "Hawaiian")
+				{
+					document.getElementById("price").innerHTML = "$7.89";
+				}
+				else if (document.getElementById("choice").value == "Margherita")
+				{
+					document.getElementById("price").innerHTML = "$6.49";
+				}
+				else if (document.getElementById("choice").value == "Margheritin")
+				{
+					document.getElementById("price").innerHTML = "$6.49";
+				}
+				else if (document.getElementById("choice").value == "Vegan")
+				{
+					document.getElementById("price").innerHTML = "$6.39";
+				}
 			}
-			else if (document.getElementById("choice").value == "BBQ Chicken")
-			{
-				document.getElementById("price").innerHTML = "$7.89";
-			}
-			else if (document.getElementById("choice").value == "Pepperoni")
-			{
-				document.getElementById("price").innerHTML = "$6.49";
-			}
-			else if (document.getElementById("choice").value == "Meat Lovers")
-			{
-				document.getElementById("price").innerHTML = "$7.89";
-			}
-			else if (document.getElementById("choice").value == "Hawaiian")
-			{
-				document.getElementById("price").innerHTML = "$7.89";
-			}
-			else if (document.getElementById("choice").value == "Margherita")
-			{
-				document.getElementById("price").innerHTML = "$6.49";
-			}
-			else if (document.getElementById("choice").value == "Margheritin")
-			{
-				document.getElementById("price").innerHTML = "$6.49";
-			}
-			else if (document.getElementById("choice").value == "Vegan")
-			{
-				document.getElementById("price").innerHTML = "$6.39";
-			}
-		}
+		
 	</script>
 
   </head>
