@@ -5,14 +5,10 @@ class CreatePastOrders < ActiveRecord::Migration
       t.integer :userID
       t.integer :employeeID
       t.string :itemsOrdered
-      t.decimal4 :subtotal
-      t.decimal2 :subtotal
-      t.decimal4 :total
-      t.decimal2 :total
-      t.decimal4 :startTime
-      t.decimal2 :startTime
-      t.decimal4 :completionTime
-      t.decimal2 :completionTime
+      t.decimal :subtotal, precision:4, scale:2
+      t.decimal :total, precision:4, scale:2
+      t.decimal :startTime, precision:4, scale:2
+      t.decimal :completionTime, precision:4, scale:2
 
       t.timestamps null: false
     end
