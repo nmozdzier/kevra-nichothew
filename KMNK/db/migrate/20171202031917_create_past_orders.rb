@@ -1,9 +1,9 @@
 class CreatePastOrders < ActiveRecord::Migration
   def change
     create_table :past_orders do |t|
-      t.int :orderID
-      t.int :userID
-      t.int :employeeID
+      t.integer :orderID
+      t.integer :userID
+      t.integer :employeeID
       t.string :itemsOrdered
       t.decimal4 :subtotal
       t.decimal2 :subtotal
