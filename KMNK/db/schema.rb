@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20171202032110) do
     t.datetime "updated_at",             null: false
   end
 
-  create_table "foods", force: :cascade do |t|
+  create_table "foods"", force: :cascade do |t|
     t.integer  "foodID",       limit: 4
     t.string   "menuCategory", limit: 255
     t.string   "name",         limit: 255
