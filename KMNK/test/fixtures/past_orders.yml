@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  orderID: 
+  userID: 
+  employeeID: 
+  itemsOrdered: MyString
+  subtotal: 
+  subtotal: 
+  total: 
+  total: 
+  startTime: 
+  startTime: 
+  completionTime: 
+  completionTime: 
+
+two:
+  orderID: 
+  userID: 
+  employeeID: 
+  itemsOrdered: MyString
+  subtotal: 
+  subtotal: 
+  total: 
+  total: 
+  startTime: 
+  startTime: 
+  completionTime: 
+  completionTime: 

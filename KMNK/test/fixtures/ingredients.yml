@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ingredientID: 
+  menuCategory: MyString
+  name: MyString
+  customizationStyle: MyString
+
+two:
+  ingredientID: 
+  menuCategory: MyString
+  name: MyString
+  customizationStyle: MyString
