@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  foodID: 
+  menuCategory: MyString
+  name: MyString
+  price: 
+  onMenuNow: false
+
+two:
+  foodID: 
+  menuCategory: MyString
+  name: MyString
+  price: 
+  onMenuNow: false
