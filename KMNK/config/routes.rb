@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'non_item/home'
+
+  get 'non_item/about'
+
+  get 'non_item/contact'
+
   get 'item_pages/calzone'
 
   get 'item_pages/pizza'

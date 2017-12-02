@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171202203154) do
+ActiveRecord::Schema.define(version: 20171202213021) do
 
   create_table "employees", force: :cascade do |t|
     t.integer  "employeeID", limit: 4
@@ -23,7 +23,6 @@ ActiveRecord::Schema.define(version: 20171202203154) do
   end
 
   create_table "foods", force: :cascade do |t|
-    t.integer  "foodID",       limit: 4
     t.string   "menuCategory", limit: 255
     t.string   "name",         limit: 255
     t.integer  "price",        limit: 4
