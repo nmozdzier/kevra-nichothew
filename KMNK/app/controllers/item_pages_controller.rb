@@ -11,7 +11,7 @@ class ItemPagesController < ApplicationController
   def soup
   end
 
-  def drinks
+  def drink
   end
 
   def glutenfree

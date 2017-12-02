@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   get 'item_pages/soup'
 
-  get 'item_pages/drinks'
+  get 'item_pages/drink'
 
   get 'item_pages/glutenfree'
 

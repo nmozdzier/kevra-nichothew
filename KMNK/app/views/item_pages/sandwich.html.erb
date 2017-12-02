@@ -66,65 +66,113 @@
 				}
 			}
 		</script>
-		</head>
-		<body>
-		<option value="turkey_bacon_club">Turkey Bacon Club</option>
-						<option value="turkey_jalapeno_melt">Turkey Jalapeno Melt</option>
-						<option value="veggie_club">Veggie Club</option>
-					</select> 
-					<br><br>
-					Bread:<br>
-					<input value="white_baguette" id="White Baguette" name="bread_choice" type="radio"> White Baguette <br>
-					<input value="wheat_baguette" id="Wheat Baguette" name="bread_choice" type="radio"> Wheat Baguette <br>
-					<input value="white_ciabatta" id="White Ciabatta" name="bread_choice" type="radio"> White Ciabatta <br>
-					<input value="potato_rosemary_ciabatta" id="Potato Rosemary Ciabatta" name="bread_choice" type="radio"> Potato Rosemary Ciabatta <br>
-					<input value="focaccia" id="Focaccia" name="bread_choice" type="radio"> Focaccia <br>
-					<input value="7_grain" id="7-Grain" name="bread_choice" type="radio"> 7-Grain <br>
-					<br>
-					Condiment:<br>
-					<input value="ranch" id="Ranch" name="condiment" type="radio"> Ranch <br>
-					<input value="spicy_ranch" id="Spicy Ranch" name="condiment" type="radio"> Spicy Ranch <br>
-					<input value="mustard" id="Mustard" name="condiment" type="radio"> Mustard <br>
-					<input value="brown_mustard" id="Brown Mustard" name="condiment" type="radio"> Brown Mustard <br>
-					<input value="mayo" id="Mayo" name="condiment" type="radio"> Mayo <br>
-					<input value="bbq" id="BBQ" name="condiment" type="radio"> BBQ <br>
-					<input value="hot_sauce" id="Hot Sauce" name="condiment" type="radio"> Hot Sauce <br>
-					<input value="pesto" id="Pesto" name="condiment" type="radio"> Pesto <br>
-					<input value="hummus" id="Hummus" name="condiment" type="radio"> Hummus <br>
-					<input value="honey_mustard" id="Honey Mustard" name="condiment" type="radio"> Honey Mustard <br>
-					<input value="italian" id="Italian" name="condiment" type="radio"> Italian <br>
-					<input value="avocado" id="Avocado" name="condiment" type="radio"> Avocado <br>
-					<br>
-					Toasted:<br>
-					<input value="true" name="toasted" id="Yes" type="radio"> Yes <br>
-					<input value="false" name="toasted" id="No" type="radio"> No <br>
-					<br>
-					Quantity:<br>
-					<select name="quantity">
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-					</select> 
-					<br><br>
-					Additional Comments:<br>
-					<input type="text" value="" placeholder="Any special instructions?">
-					<br><br>
-					<input type="submit" value="Submit">
-				</form> 
-			</div>
-			</div>
-			<!-- /.card -->
+	</head>
+	<body>
+	<!-- Page Content -->
+	    <div class="container">
 
-			<!-- /.card -->
+	      <div class="row">
 
+		<div class="col-lg-3">
+		  <h1 class="my-4">Sandwich</h1>
+		  <div class="list-group">
+			<%= link_to "Calzone", "/item_pages/calzone", :class => "list-group-item" %>
+			<%= link_to "Pizza", "/item_pages/pizza", :class => "list-group-item" %>
+			<%= link_to "Sandwich", "/item_pages/sandwich", :class => "list-group-item" %>
+			<%= link_to "Soup", "/item_pages/soup", :class => "list-group-item" %>
+			<%= link_to "Salad", "/item_pages/salad", :class => "list-group-item" %>
+			<%= link_to "Gluten-Free", "/item_pages/glutenfree", :class => "list-group-item" %>
+			<%= link_to "Dessert", "/item_pages/dessert", :class => "list-group-item" %>
+			<%= link_to "Drink", "/item_pages/drink", :class => "list-group-item" %>
+		  </div>
 		</div>
-		<!-- /.col-lg-9 -->
+		<!-- /.col-lg-3 -->
 
-		</div>
+		<div class="col-lg-9">
 
-	</div>
-	<!-- /.container -->
+		  <div class="card mt-4">
+		    <%= image_tag "sandwich.jpg"%>
+		    <div class="card-body">
+		      <h3 class="card-title">Price</h3>
+		      <h4 id="price">$6.89</h4>
+				  <p class="card-text">"Delectably filling."</p>
+				  <p class="card-text">Ingredients: Wheat, Cheese, Tomato, Lettuce</p>
+					<form action="submit.php">
+						Type:<br>
+						<select id="choice" name="type" onchange="changePrice()">
+							<option value="baker_bacon">Baker Bacon</option>
+							<option value="bbq_chicken">BBQ Chicken</option>
+							<option value="classic_blt">Classic BLT</option>
+							<option value="classic_italian">Classic Italian</option>
+							<option value="darly_divine">Darly Divine</option>
+							<option value="farrand_fodder">Farrand Fodder</option>
+							<option value="hallett_ham">Hallett Ham</option>
+							<option value="libby_licious">Libby Licious</option>
+							<option value="parisian_grilled_cheese">Parisian Grilled Cheese</option>
+							<option value="roast_beef_pepper_melt">Roast Beef Pepper Melt</option>
+							<option value="tofu_mozzarella">Tofu Mozzarella</option>
+							<option value="tuna_melt">Tuna Melt</option>
+							<option value="turkey_bacon_club">Turkey Bacon Club</option>
+							<option value="turkey_jalapeno_melt">Turkey Jalapeno Melt</option>
+							<option value="veggie_club">Veggie Club</option>
+						</select> 
+						<br><br>
+						Bread:<br>
+						<input value="white_baguette" id="White Baguette" name="bread_choice" type="radio"> White Baguette <br>
+						<input value="wheat_baguette" id="Wheat Baguette" name="bread_choice" type="radio"> Wheat Baguette <br>
+						<input value="white_ciabatta" id="White Ciabatta" name="bread_choice" type="radio"> White Ciabatta <br>
+						<input value="potato_rosemary_ciabatta" id="Potato Rosemary Ciabatta" name="bread_choice" type="radio"> Potato Rosemary Ciabatta <br>
+						<input value="focaccia" id="Focaccia" name="bread_choice" type="radio"> Focaccia <br>
+						<input value="7_grain" id="7-Grain" name="bread_choice" type="radio"> 7-Grain <br>
+						<br>
+						Condiment:<br>
+						<input value="ranch" id="Ranch" name="condiment" type="radio"> Ranch <br>
+						<input value="spicy_ranch" id="Spicy Ranch" name="condiment" type="radio"> Spicy Ranch <br>
+						<input value="mustard" id="Mustard" name="condiment" type="radio"> Mustard <br>
+						<input value="brown_mustard" id="Brown Mustard" name="condiment" type="radio"> Brown Mustard <br>
+						<input value="mayo" id="Mayo" name="condiment" type="radio"> Mayo <br>
+						<input value="bbq" id="BBQ" name="condiment" type="radio"> BBQ <br>
+						<input value="hot_sauce" id="Hot Sauce" name="condiment" type="radio"> Hot Sauce <br>
+						<input value="pesto" id="Pesto" name="condiment" type="radio"> Pesto <br>
+						<input value="hummus" id="Hummus" name="condiment" type="radio"> Hummus <br>
+						<input value="honey_mustard" id="Honey Mustard" name="condiment" type="radio"> Honey Mustard <br>
+						<input value="italian" id="Italian" name="condiment" type="radio"> Italian <br>
+						<input value="avocado" id="Avocado" name="condiment" type="radio"> Avocado <br>
+						<br>
+						Toasted:<br>
+						<input value="true" name="toasted" id="Yes" type="radio"> Yes <br>
+						<input value="false" name="toasted" id="No" type="radio"> No <br>
+						<br>
+						Quantity:<br>
+						<select name="quantity">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select> 
+						<br><br>
+						Additional Comments:<br>
+						<input type="text" value="" placeholder="Any special instructions?">
+						<br><br>
+						<input type="submit" value="Submit">
+					</form> 
+		    </div>
+		  </div>
+		  <!-- /.card -->
+        </div>
+        <!-- /.col-lg-9 -->
+
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; kevra-nichothew 2017</p>
+      </div>
+      <!-- /.container -->
 	</body>
 	</html>
