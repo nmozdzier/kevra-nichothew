@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get 'non_item/home'
 
+  get 'non_item/cart'
+
   get 'non_item/about'
 
   get 'non_item/contact'
@@ -27,7 +29,8 @@ Rails.application.routes.draw do
 
   get 'item_pages/sandwich'
 
-  get 'item_pages/home'
+  resources :order_items, only: [:create, :update, :destroy]
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

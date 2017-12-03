@@ -7,4 +7,10 @@ class NonItemController < ApplicationController
 
   def contact
   end
+
+  def cart
+     def show
+     @order_items = current_order.order_items
+     end
+  end
 end
