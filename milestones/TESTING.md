@@ -20,12 +20,17 @@ screenshot is in milestones.jpg
 For the automated testing, we will be using Ruby on Rails’ built-in testing features (described here). The tests that we perform are as follows:
 
 Navigating between pages
-Successful: When any link is clicked, the user is taken to the appropriate page
-Test if link clicked=new URL
-Pages displaying correctly
-Successful: Each pages correctly displays all relevant menu and form information for the current item and updates correctly when a new item is selected
-Test against manual query if answer matches what is displayed on webpage
-Adding things to the cart (and them staying there)
-Successful: Pressing add to cart places item based on the appropriate ID in the appropriate container
-Perform sample order, compare to expected results
+Successful: 
+- When any link is clicked, the user is taken to the appropriate page
+    - Test if link clicked=new URL
+    - Pages displaying correctly
+
+Successful: 
+- Each pages correctly displays all relevant menu and form information for the current item and updates correctly when a new item is selected
+    - Test against manual query if answer matches what is displayed on webpage
+    - Adding things to the cart (and them staying there)
+    
+Successful: 
+- Pressing add to cart places item based on the appropriate ID in the appropriate container
+    - Perform sample order, compare to expected results
 
