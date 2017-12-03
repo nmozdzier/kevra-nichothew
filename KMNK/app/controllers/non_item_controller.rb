@@ -1,5 +1,4 @@
 class NonItemController < ApplicationController
-  layout 'non_item'
   def home
   end
 

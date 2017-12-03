@@ -1,5 +1,4 @@
 class ItemPagesController < ApplicationController
-  layout 'item_pages'
   def calzone
   end
 
