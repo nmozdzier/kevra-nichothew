@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get 'non_item/about'
 
   get 'non_item/contact'
+  
+  get 'non_item/login'
 
   get 'item_pages/calzone'
 
