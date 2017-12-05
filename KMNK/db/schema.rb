@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171202213021) do
+ActiveRecord::Schema.define(version: 20171205230525) do
 
   create_table "employees", force: :cascade do |t|
     t.integer  "employeeID", limit: 4
@@ -83,18 +83,12 @@ ActiveRecord::Schema.define(version: 20171202213021) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.integer  "userID",      limit: 4
-    t.string   "firstName",   limit: 255
-    t.string   "lastName",    limit: 255
-    t.integer  "dateOfBirth", limit: 4
-    t.string   "email",       limit: 255
-    t.string   "passW",       limit: 255
-    t.integer  "phone",       limit: 4
-    t.string   "address",     limit: 255
-    t.string   "savedOrder",  limit: 255
-    t.string   "lastOrder",   limit: 255
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.string   "first_name",      limit: 255
+    t.string   "last_name",       limit: 255
+    t.string   "email",           limit: 255
+    t.string   "password_digest", limit: 255
   end
 
   add_foreign_key "order_items", "foods"

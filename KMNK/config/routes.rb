@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   get 'order_items/create'
 
   get 'order_items/update'
