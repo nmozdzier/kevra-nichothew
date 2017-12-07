@@ -12,4 +12,9 @@ class ApplicationController < ActionController::Base
       Order.new
     end
   end
+private
+  def current_user
+    User.where(id: session[:user_id]).first
+  end
+  helper_method :current_user
 end
