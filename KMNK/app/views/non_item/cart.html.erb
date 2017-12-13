@@ -1,2 +1,63 @@
-<h1>NonItem#about</h1>
-<p>Find me in app/views/non_item/about.html.erb</p>
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WeatherTech Cafe - Cart</title>
+
+  </head>
+
+  <body>
+     <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-3">
+          <h1 class="my-4">Cart</h1>
+          <div class="list-group">
+			<%= link_to "Calzone", "/item_pages/calzone", :class => "list-group-item" %>
+			<%= link_to "Pizza", "/item_pages/pizza", :class => "list-group-item" %>
+			<%= link_to "Sandwich", "/item_pages/sandwich", :class => "list-group-item" %>
+			<%= link_to "Soup", "/item_pages/soup", :class => "list-group-item" %>
+			<%= link_to "Salad", "/item_pages/salad", :class => "list-group-item" %>
+			<%= link_to "Gluten-Free", "/item_pages/glutenfree", :class => "list-group-item" %>
+			<%= link_to "Dessert", "/item_pages/dessert", :class => "list-group-item" %>
+			<%= link_to "Drink", "/item_pages/drink", :class => "list-group-item" %>
+          </div>
+        </div>
+        <!-- /.col-lg-3 -->
+
+        <div class="col-lg-9">
+
+          <div class="card mt-4">
+            <div class="card-body">
+         	<h1 class="card-title">Cart Items</h1>
+		<h2 style="text-align:center;">
+		<br><br><br>
+		Cart is Empty!
+		<br><br>
+		</h2>
+		<h4 style="text-align:center;">Why not add something?</h4>
+		<br><br><br><br><br>
+            </div>
+          </div>
+          <!-- /.card -->
+
+          <!-- /.card -->
+
+        </div>
+        <!-- /.col-lg-9 -->
+
+      </div>
+
+    </div>
+    <!-- /.container -->
+  </body>
+</html>
+

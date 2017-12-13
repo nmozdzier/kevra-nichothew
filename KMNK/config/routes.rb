@@ -22,6 +22,10 @@ Rails.application.routes.draw do
 
   get 'non_item/cart'
 
+  get 'non_item/cart1'
+
+  get 'non_item/cart2'
+
   get 'non_item/about'
 
   get 'non_item/contact'

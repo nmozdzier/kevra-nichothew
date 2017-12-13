@@ -9,43 +9,44 @@
     <meta name="author" content="">
 
     <title>WeatherTech Cafe - Calzone</title>
-    <script>
-			function changePrice()
+	<script>
+	function changePrice()
+		{
+			var q = parseInt(document.getElementById("quantity").value);
+			if (document.getElementById("choice").value == "Cheese")
 			{
-				if (document.getElementById("choice").value == "Cheese")
-				{
-					document.getElementById("price").innerHTML = "$5.89";
-				}
-				else if (document.getElementById("choice").value == "BBQ Chicken")
-				{
-					document.getElementById("price").innerHTML = "$7.89";
-				}
-				else if (document.getElementById("choice").value == "Pepperoni")
-				{
-					document.getElementById("price").innerHTML = "$6.49";
-				}
-				else if (document.getElementById("choice").value == "Meat Lovers")
-				{
-					document.getElementById("price").innerHTML = "$7.89";
-				}
-				else if (document.getElementById("choice").value == "Hawaiian")
-				{
-					document.getElementById("price").innerHTML = "$7.89";
-				}
-				else if (document.getElementById("choice").value == "Margherita")
-				{
-					document.getElementById("price").innerHTML = "$6.49";
-				}
-				else if (document.getElementById("choice").value == "Margheritin")
-				{
-					document.getElementById("price").innerHTML = "$6.49";
-				}
-				else if (document.getElementById("choice").value == "Vegan")
-				{
-					document.getElementById("price").innerHTML = "$6.39";
-				}
+				q = q * 5.89;
 			}
-		
+			else if (document.getElementById("choice").value == "BBQ Chicken")
+			{
+				q = q * 6.89;
+			}
+			else if (document.getElementById("choice").value == "Pepperoni")
+			{
+				q = q * 6.49;
+			}
+			else if (document.getElementById("choice").value == "Meat Lovers")
+			{
+				q = q * 7.89;
+			}
+			else if (document.getElementById("choice").value == "Hawaiian")
+			{
+				q = q * 7.89;
+			}
+			else if (document.getElementById("choice").value == "Margherita")
+			{
+				q = q * 6.49;
+			}
+			else if (document.getElementById("choice").value == "Margheritin")
+			{
+				q = q * 6.49
+			}
+			else if (document.getElementById("choice").value == "Vegan")
+			{
+				q = q * 6.39;
+			}
+			document.getElementById("price").innerHTML = "$" + q.toFixed(2);
+		}		
 	</script>
 
   </head>
@@ -94,7 +95,7 @@
 					</select> 
 					<br><br>
 					Quantity:<br>
-					<select name="quantity">
+					<select id="quantity" name="quantity" onchange="changePrice()">
 						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -105,7 +106,7 @@
 					Additional Comments:<br>
 					<input type="text" value="" placeholder="Any special instructions?">
 					<br><br>
-					<input type="submit" value="Submit">
+					<input type="submit" value="Add to Cart">
 				</form> 
             </div>
           </div>

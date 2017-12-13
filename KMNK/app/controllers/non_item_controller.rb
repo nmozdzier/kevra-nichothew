@@ -16,4 +16,10 @@ class NonItemController < ApplicationController
      @order_items = current_order.order_items
      end
   end
+  
+  def cart1
+  end
+
+  def cart2
+  end
 end
