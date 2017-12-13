@@ -1,4 +1,7 @@
 class NonItemController < ApplicationController
+
+  #before_action :confirm_logged_in
+
   def home
   end
 
@@ -22,4 +25,13 @@ class NonItemController < ApplicationController
 
   def cart2
   end
+
+  private
+
+  #def confirm_logged_in
+    #unless session[:user_id]
+      #flash[:notice] = "Please log in"
+      #redirect_to (login_path)
+    #end
+  #end
 end
