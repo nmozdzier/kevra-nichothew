@@ -192,7 +192,6 @@
 					Additional Comments:
 					<span>"no milk"</span>
 				</form>
-			
 			<button type="button" onclick="window.location.href='/non_item/cart1'">Remove Item</button>
 			</h4>
 		<h2 style="float:right;" id="price2">$1.45</h2>
@@ -200,8 +199,22 @@
 		<br><br>
 		<h2 id="total" style="float:right;">Total: $6.34</h2>
 		<br><br><br>
-		<button style="background-color: #4CAF50;border: none;color: white;padding: 12px 24px;text-align: center;text-decoration: none;
-		cursor: pointer;float:right;font-size: 16px;" type="button" onclick="window.location.href='/non_item/cart1'">Checkout</button>
+		<form action="https://formspree.io/keya5541@colorado.edu" method="POST">
+			<textarea style="opacity:0;left:-5000px;position:absolute;" name="Order:">
+			-- Pizza --
+			Type: Cheese 
+			Quantity: 1
+			Comments: None
+			-- Drink --
+			Type: Coffee 12oz
+			Quantity: 1
+			Comments: "no milk"
+
+			Total = $6.34</textarea>
+   			<button style="background-color: #4CAF50;border: none;color: white;padding: 12px 24px;text-align: center;text-decoration: none;
+			cursor: pointer;float:right;font-size: 16px;" type="submit" onclick="window.location.href='/non_item/cart1'">Checkout</button>
+		</form> 
+		
 	     </div>
           </div>
           <!-- /.card -->
