@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WeatherTech Cafe - Cart</title>
+    <script>
+		function changePrice()
+		{
+			var q = parseInt(document.getElementById("quantity").value);
+			var q2 = parseInt(document.getElementById("quantity2").value);
+			var t = 0;
+			if (document.getElementById("choice").value == "Cheese")
+			{
+				q = q * 4.89;
+			}
+			else if (document.getElementById("choice").value == "BBQ Chicken")
+			{
+				q = q * 6.89;
+			}
+			else if (document.getElementById("choice").value == "Pepperoni")
+			{
+				q = q * 5.49;
+			}
+			else if (document.getElementById("choice").value == "Meat Lovers")
+			{
+				q = q * 6.89;
+			}
+			else if (document.getElementById("choice").value == "Hawaiian")
+			{
+				q = q * 6.89;
+			}
+			else if (document.getElementById("choice").value == "Margherita")
+			{
+				q = q * 5.49;
+			}
+			else if (document.getElementById("choice").value == "Margheritin")
+			{
+				q = q * 5.49
+			}
+			else if (document.getElementById("choice").value == "Vegan")
+			{
+				q = q * 5.39;
+			}
+			document.getElementById("price").innerHTML = "$" + q.toFixed(2);
+
+			if (document.getElementById("choice2").value == "coffee_12oz")
+			{
+				q2 = q2 * 1.45;
+			}
+			else if (document.getElementById("choice2").value == "coffee_16oz")
+			{
+				q2 = q2 * 1.80;
+			}
+			else if (document.getElementById("choice2").value == "coffee_20oz")
+			{
+				q2 = q2 * 2.05;
+			}
+			else if (document.getElementById("choice2").value == "tea_12oz")
+			{
+				q2 = q2 * 1.19;
+			}
+			else if (document.getElementById("choice2").value == "tea_16oz")
+			{
+				q2 = q2 * 1.59;
+			}
+			else if (document.getElementById("choice2").value == "tea_20oz")
+			{
+				q2 = q2 * 1.89;
+			}
+			else if (document.getElementById("choice2").value == "apple_12oz")
+			{
+				q2 = q2 * 1.95;
+			}
+			else if (document.getElementById("choice2").value == "apple_16oz")
+			{
+				q2 = q2 * 2.35;
+			}
+			else if (document.getElementById("choice2").value == "apple_20oz")
+			{
+				q2 = q2 * 2.65;
+			}
+			else if (document.getElementById("choice2").value == "smoothie_16oz")
+			{
+				q2 = q2 * 5.89;
+			}
+			document.getElementById("price2").innerHTML = "$" + q2.toFixed(2);
+			
+			t = q + q2;
+			document.getElementById("total").innerHTML = "Total: $" + t.toFixed(2);
+		}
+	</script>
+  </head>
+
+  <body>
+     <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-3">
+          <h1 class="my-4">Cart</h1>
+          <div class="list-group">
+			<%= link_to "Calzone", "/item_pages/calzone", :class => "list-group-item" %>
+			<%= link_to "Pizza", "/item_pages/pizza", :class => "list-group-item" %>
+			<%= link_to "Sandwich", "/item_pages/sandwich", :class => "list-group-item" %>
+			<%= link_to "Soup", "/item_pages/soup", :class => "list-group-item" %>
+			<%= link_to "Salad", "/item_pages/salad", :class => "list-group-item" %>
+			<%= link_to "Gluten-Free", "/item_pages/glutenfree", :class => "list-group-item" %>
+			<%= link_to "Dessert", "/item_pages/dessert", :class => "list-group-item" %>
+			<%= link_to "Drink", "/item_pages/drink", :class => "list-group-item" %>
+          </div>
+        </div>
+        <!-- /.col-lg-3 -->
+
+        <div class="col-lg-9">
+
+          <div class="card mt-4">
+            <div class="card-body">
+         	<h1 class="card-title">Cart Items</h1>
+		<br>
+		<h3 style="display:inline;">&nbsp;Pizza &nbsp;&nbsp;</h3>
+		<span>
+			<%= image_tag "pizza.jpg", :size => '240x160' %>		
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<h4 style="display:inline-block;">
+				<form>
+					Type:
+					<select id="choice" name="type" onchange="changePrice()">
+						<option value="Cheese">Cheese</option>
+						<option value="BBQ Chicken">BBQ Chicken</option>
+						<option value="Pepperoni">Pepperoni</option>
+						<option value="Meat Lovers">Meat Lovers</option>
+						<option value="Hawaiian">Hawaiian</option>
+						<option value="Margherita">Margherita</option>
+						<option value="Margheritin">Margheritin</option>
+						<option value="Vegan">Vegan</option>
+					</select>
+					<br>
+					Quantity:
+					<select id="quantity" name="quantity" onchange="changePrice()">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+					<br>
+					Additional Comments:
+					<span>None</span>
+				</form>
+			
+			<button type="button" onclick="window.location.href='/non_item/cart'">Remove Item</button>
+			</h4>
+		<h2 style="float:right;" id="price">$4.89</h2>
+		</span>
+		<br><br>
+		<h3 style="display:inline;">&nbsp;Drink&nbsp;&nbsp;</h3>
+		<span>
+			<%= image_tag "drink.jpg", :size => '240x160' %>		
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<h4 style="display:inline-block;">
+				<form>
+					Type:
+					<select id="choice2" name="type" onchange="changePrice()">
+						<option value="coffee_12oz">Coffee 12oz</option>
+						<option value="coffee_16oz">Coffee 16oz</option>
+						<option value="coffee_20oz">Coffee 20oz</option>
+						<option value="tea_12oz">Tea 12oz</option>
+						<option value="tea_16oz">Tea 16oz</option>
+						<option value="tea_20oz">Tea 20oz</option>
+						<option value="apple_12oz">Apple Cider 12oz</option>
+						<option value="apple_16oz">Apple Cider 16oz</option>
+						<option value="apple_20oz">Apple Cider 20oz</option>
+						<option value="smoothie_16oz">Smoothie 16oz</option>
+					</select> 
+					<br>
+					Quantity:
+					<select id="quantity2" name="quantity2" onchange="changePrice()">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+					<br>
+					Additional Comments:
+					<span>"no milk"</span>
+				</form>
+			<button type="button" onclick="window.location.href='/non_item/cart1'">Remove Item</button>
+			</h4>
+		<h2 style="float:right;" id="price2">$1.45</h2>
+		</span>
+		<br><br>
+		<h2 id="total" style="float:right;">Total: $6.34</h2>
+		<br><br><br>
+		<form action="https://formspree.io/keya5541@colorado.edu" method="POST">
+			<textarea style="opacity:0;left:-5000px;position:absolute;" name="Order:">
+			-- Pizza --
+			Type: Cheese 
+			Quantity: 1
+			Comments: None
+			-- Drink --
+			Type: Coffee 12oz
+			Quantity: 1
+			Comments: "no milk"
+
+			Total = $6.34</textarea>
+   			<button style="background-color: #4CAF50;border: none;color: white;padding: 12px 24px;text-align: center;text-decoration: none;
+			cursor: pointer;float:right;font-size: 16px;" type="submit" onclick="window.location.href='/non_item/cart1'">Checkout</button>
+		</form> 
+		
+	     </div>
+          </div>
+          <!-- /.card -->
+
+          <!-- /.card -->
+
+        </div>
+        <!-- /.col-lg-9 -->
+
+      </div>
+
+    </div>
+    <!-- /.container -->
+  </body>
+</html>
+

@@ -9,7 +9,9 @@ Rails.application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
   get 'signup', to: 'users#new', as: 'signup'
   get 'login', to: 'sessions#new', as: 'login'
-  get 'logout', to: 'sessions#destroy', as: 'logout' 
+  post 'login' => 'sessions#create'
+  get 'logout' => 'sessions#destroy'
+  post 'logout' => 'sessions#destroy'
 
   resources :users
   get 'order_items/create'
@@ -21,6 +23,10 @@ Rails.application.routes.draw do
   get 'non_item/home'
 
   get 'non_item/cart'
+
+  get 'non_item/cart1'
+
+  get 'non_item/cart2'
 
   get 'non_item/about'
 
